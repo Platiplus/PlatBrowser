@@ -1,0 +1,328 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09B705681FF67FE30066DB65 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B705671FF67FE30066DB65 /* AppDelegate.swift */; };
+		09B7056A1FF67FE30066DB65 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B705691FF67FE30066DB65 /* ViewController.swift */; };
+		09B7056D1FF67FE30066DB65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B7056B1FF67FE30066DB65 /* Main.storyboard */; };
+		09B705701FF67FE30066DB65 /* PlatBrowser.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09B7056E1FF67FE30066DB65 /* PlatBrowser.xcdatamodeld */; };
+		09B705721FF67FE30066DB65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09B705711FF67FE30066DB65 /* Assets.xcassets */; };
+		09B705751FF67FE30066DB65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09B705731FF67FE30066DB65 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		09B705641FF67FE30066DB65 /* PlatBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PlatBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09B705671FF67FE30066DB65 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		09B705691FF67FE30066DB65 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		09B7056C1FF67FE30066DB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09B7056F1FF67FE30066DB65 /* PlatBrowser.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlatBrowser.xcdatamodel; sourceTree = "<group>"; };
+		09B705711FF67FE30066DB65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09B705741FF67FE30066DB65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09B705761FF67FE30066DB65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09B705611FF67FE30066DB65 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09B7055B1FF67FE30066DB65 = {
+			isa = PBXGroup;
+			children = (
+				09B705661FF67FE30066DB65 /* PlatBrowser */,
+				09B705651FF67FE30066DB65 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09B705651FF67FE30066DB65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09B705641FF67FE30066DB65 /* PlatBrowser.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09B705661FF67FE30066DB65 /* PlatBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				09B705671FF67FE30066DB65 /* AppDelegate.swift */,
+				09B705691FF67FE30066DB65 /* ViewController.swift */,
+				09B7056B1FF67FE30066DB65 /* Main.storyboard */,
+				09B705711FF67FE30066DB65 /* Assets.xcassets */,
+				09B705731FF67FE30066DB65 /* LaunchScreen.storyboard */,
+				09B705761FF67FE30066DB65 /* Info.plist */,
+				09B7056E1FF67FE30066DB65 /* PlatBrowser.xcdatamodeld */,
+			);
+			path = PlatBrowser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09B705631FF67FE30066DB65 /* PlatBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09B705791FF67FE30066DB65 /* Build configuration list for PBXNativeTarget "PlatBrowser" */;
+			buildPhases = (
+				09B705601FF67FE30066DB65 /* Sources */,
+				09B705611FF67FE30066DB65 /* Frameworks */,
+				09B705621FF67FE30066DB65 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PlatBrowser;
+			productName = PlatBrowser;
+			productReference = 09B705641FF67FE30066DB65 /* PlatBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09B7055C1FF67FE30066DB65 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = Platiplus;
+				TargetAttributes = {
+					09B705631FF67FE30066DB65 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = L7E2UT3M6D;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 09B7055F1FF67FE30066DB65 /* Build configuration list for PBXProject "PlatBrowser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09B7055B1FF67FE30066DB65;
+			productRefGroup = 09B705651FF67FE30066DB65 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09B705631FF67FE30066DB65 /* PlatBrowser */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09B705621FF67FE30066DB65 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B705751FF67FE30066DB65 /* LaunchScreen.storyboard in Resources */,
+				09B705721FF67FE30066DB65 /* Assets.xcassets in Resources */,
+				09B7056D1FF67FE30066DB65 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09B705601FF67FE30066DB65 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B7056A1FF67FE30066DB65 /* ViewController.swift in Sources */,
+				09B705701FF67FE30066DB65 /* PlatBrowser.xcdatamodeld in Sources */,
+				09B705681FF67FE30066DB65 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		09B7056B1FF67FE30066DB65 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09B7056C1FF67FE30066DB65 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09B705731FF67FE30066DB65 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09B705741FF67FE30066DB65 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09B705771FF67FE30066DB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		09B705781FF67FE30066DB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09B7057A1FF67FE30066DB65 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L7E2UT3M6D;
+				INFOPLIST_FILE = PlatBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Plat.PlatBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		09B7057B1FF67FE30066DB65 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = L7E2UT3M6D;
+				INFOPLIST_FILE = PlatBrowser/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Plat.PlatBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09B7055F1FF67FE30066DB65 /* Build configuration list for PBXProject "PlatBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B705771FF67FE30066DB65 /* Debug */,
+				09B705781FF67FE30066DB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09B705791FF67FE30066DB65 /* Build configuration list for PBXNativeTarget "PlatBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09B7057A1FF67FE30066DB65 /* Debug */,
+				09B7057B1FF67FE30066DB65 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09B7056E1FF67FE30066DB65 /* PlatBrowser.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09B7056F1FF67FE30066DB65 /* PlatBrowser.xcdatamodel */,
+			);
+			currentVersion = 09B7056F1FF67FE30066DB65 /* PlatBrowser.xcdatamodel */;
+			path = PlatBrowser.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 09B7055C1FF67FE30066DB65 /* Project object */;
+}
