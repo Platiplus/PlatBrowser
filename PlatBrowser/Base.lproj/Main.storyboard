@@ -1,14 +1,18 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PlatBrowser" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,76 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QVt-O3-Pf3">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="b8R-db-8mH">
+                                        <searchBar key="customView" contentMode="redraw" id="pra-rw-tpJ">
+                                            <rect key="frame" x="16" y="0.0" width="223" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <textInputTraits key="textInputTraits"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="BYZ-38-t0r" id="3XK-bu-ujl"/>
+                                            </connections>
+                                        </searchBar>
+                                    </barButtonItem>
+                                    <barButtonItem image="back" id="8h0-sU-Vga" userLabel="backButton">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="backButton:" destination="BYZ-38-t0r" id="t21-S2-bUC"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="z3c-LQ-PYx"/>
+                                    <barButtonItem image="refresh" id="bVj-z7-cju" userLabel="refreshButton">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="refreshButton:" destination="BYZ-38-t0r" id="WN3-rG-UAi"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="59K-aC-dLH"/>
+                                    <barButtonItem image="fwd" id="vxm-oX-hch" userLabel="fwdButton">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <action selector="fwdButton:" destination="BYZ-38-t0r" id="AP7-DF-elJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="haZ-TO-ZzH"/>
+                                </items>
+                                <color key="barTintColor" red="0.53609050742871767" green="0.78839987926626687" blue="1" alpha="0.61278609154929575" colorSpace="custom" customColorSpace="sRGB"/>
+                            </toolbar>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mO8-3i-DeF">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="h15-CZ-hRY"/>
+                                </connections>
+                            </webView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="QVt-O3-Pf3" secondAttribute="trailing" id="4aI-XB-Dxq"/>
+                            <constraint firstItem="mO8-3i-DeF" firstAttribute="top" secondItem="QVt-O3-Pf3" secondAttribute="bottom" id="MlN-Rw-hrB"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mO8-3i-DeF" secondAttribute="bottom" id="RAy-NA-QFt"/>
+                            <constraint firstAttribute="trailing" secondItem="mO8-3i-DeF" secondAttribute="trailing" id="Wwe-C6-Akz"/>
+                            <constraint firstItem="mO8-3i-DeF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="dmW-Vf-tIW"/>
+                            <constraint firstItem="QVt-O3-Pf3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iwk-B0-9WB"/>
+                            <constraint firstItem="QVt-O3-Pf3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="lJP-gP-oCd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="webScreen" destination="mO8-3i-DeF" id="b7o-7z-dWa"/>
+                        <outlet property="webSearch" destination="pra-rw-tpJ" id="gdW-Qp-Bus"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="122.78860569715144"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="back" width="37" height="37"/>
+        <image name="fwd" width="37" height="37"/>
+        <image name="refresh" width="37" height="37"/>
+    </resources>
 </document>

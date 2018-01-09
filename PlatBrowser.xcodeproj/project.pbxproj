@@ -56,15 +56,47 @@
 		09B705661FF67FE30066DB65 /* PlatBrowser */ = {
 			isa = PBXGroup;
 			children = (
-				09B705671FF67FE30066DB65 /* AppDelegate.swift */,
-				09B705691FF67FE30066DB65 /* ViewController.swift */,
+				09B7057D1FF681D20066DB65 /* Controller */,
+				09B7057C1FF681B10066DB65 /* View */,
+				09B7057F1FF682180066DB65 /* Supporting Files */,
+				09B7057E1FF681E50066DB65 /* Model */,
+			);
+			path = PlatBrowser;
+			sourceTree = "<group>";
+		};
+		09B7057C1FF681B10066DB65 /* View */ = {
+			isa = PBXGroup;
+			children = (
 				09B7056B1FF67FE30066DB65 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		09B7057D1FF681D20066DB65 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				09B705691FF67FE30066DB65 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		09B7057E1FF681E50066DB65 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				09B7056E1FF67FE30066DB65 /* PlatBrowser.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		09B7057F1FF682180066DB65 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09B705671FF67FE30066DB65 /* AppDelegate.swift */,
 				09B705711FF67FE30066DB65 /* Assets.xcassets */,
 				09B705731FF67FE30066DB65 /* LaunchScreen.storyboard */,
 				09B705761FF67FE30066DB65 /* Info.plist */,
-				09B7056E1FF67FE30066DB65 /* PlatBrowser.xcdatamodeld */,
 			);
-			path = PlatBrowser;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
